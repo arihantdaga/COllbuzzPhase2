@@ -1,0 +1,172 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    overflow-y:hidden; 
+}
+body a{
+	text-shadow:none !important;
+}
+body{
+	text-shadow:none !important;
+}
+.ui-panel-wrapper
+{
+	text-shadow:none !important;
+}
+.ui-panel-page-container-a{
+	text-shadow:none !important;
+}
+.orderrow{
+    padding: 10px 0 10px;
+    border-bottom: outset 1px rgba(238, 238, 238, 0.47);
+    border-top: inset 1px rgba(252, 239, 239, 0.05);
+    font-size: 20pt;
+}
+/* Portrait layout (default) */
+.container-fluid {
+ /*  background:url(../img/logo.png) no-repeat center top; 
+    position:absolute;            
+    left:50%;
+    top:50%;
+    height:50px;                  
+    width:225px;                   
+    text-align:center;*/
+    background-color: #fff;
+   /* padding:180px 0px 0px 0px;    
+    margin:-115px 0px 0px -112px; */
+                                  
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .container-fluid {
+     
+                                      
+    }
+}
+.input-group{
+    width: 100%;
+}
+.subbtn{
+      background-color: #F6603D;
+  font-size: 24pt !important;
+  margin-top: 30px;
+  padding: 10px 30px 10px;
+  color:#fff;
+  width: 200px;
+}
+
+.nav1{
+    background-color: #1F1F1F;
+    height: 50px;
+}
+
+@media (max-width: 768px){
+    .subbtn{
+          width: 100%;
+    }
+}
+
+
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+
+
+/* Page 1 Css */
+
+
+#myPanel{
+  text-align: left;
+}
+.hh{
+	padding:0.7em;
+    text-align: left;
+  	font-size: 12pt;
+  	background-color:#000;
+  	color:white;
+  }
+.hr{
+  color:#DAD72E;;
+  padding:0.7em;
+  text-align: left;
+  font-size: 12pt;
+  background-color:#000;
+  color:;
+}
+.addon{
+              background-color: rgb(246,96,61);
+  			color: white;
+  			border-radius: 0;
+  			width: 70px;
+  			font-size: 16pt;
+        }
+
+.pending{
+	background-color:white;
+}
+.delivered{
+	background-color:green;
+}
+.Rest_Rej{
+	background-color:blue;
+}
+.rejected{
+	background-color:red;
+}
+.pickedup{
+background-color:yellow;
+}
+.category{
+	padding:0.7em;
+	background-color:#000;
+	color:white;
+	margin:0px;
+	font-size:20pt;
+}
+
+.navi_bar ul li a{
+	font-size:1.5em !important;
+}
+
+
+/* Page 2 Css */
