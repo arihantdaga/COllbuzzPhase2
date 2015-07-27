@@ -151,7 +151,7 @@ body{
 	background-color:#A2C4E6;
 }
 .rejected{
-	background-color:#FF8566;
+	background-color:#FF3030;
 }
 .pickedup{
 background-color:#FFFF99;
@@ -170,10 +170,10 @@ background-color:#FFFF99;
 .btn-warning,.btn-primary,.btn-danger,.btn-success{
 	min-width:22%;
 }
-.pageheding{
-
+.pageheading
+{
 	font-size:18pt;
 	font-weight:600;
-	
+		
 }
 /* Page 2 Css */
