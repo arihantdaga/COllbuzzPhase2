@@ -1,0 +1,15 @@
+::::::::::NOTES- DELIVERY BOY APPLICATION::::::::::
+::AUTHOR- ARIHANT@collbuzz.com ::
+
+COLOR SCHEMES:
+STATUS   -   COLOR  -   COLOR CODE
+___________________________
+pending   - WHITE    -   #F5F5F5
+Rest_Rej  - BLUE     - 	 #DDDDDD
+pickedup  - YELLOW   -   #DDDDDD
+delivered - GREEN    -	 #DDDDDD
+rejected  - RED      -	 #FF8566
+
+
+
+

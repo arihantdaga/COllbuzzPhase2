@@ -119,17 +119,17 @@ body{
   text-align: left;
 }
 .hh{
-	padding:0.7em;
+	padding:0.6em;
     text-align: left;
-  	font-size: 12pt;
+  	font-size: 20pt;
   	background-color:#000;
   	color:white;
   }
 .hr{
   color:#DAD72E;;
-  padding:0.7em;
+  padding:0.5em;
   text-align: left;
-  font-size: 12pt;
+  font-size: 20pt;
   background-color:#000;
   color:;
 }
@@ -142,19 +142,19 @@ body{
         }
 
 .pending{
-	background-color:white;
+	background-color:#EBEBEB;
 }
 .delivered{
-	background-color:green;
+	background-color:#CEFF9D;
 }
 .Rest_Rej{
-	background-color:blue;
+	background-color:#A2C4E6;
 }
 .rejected{
-	background-color:red;
+	background-color:#FF8566;
 }
 .pickedup{
-background-color:yellow;
+background-color:#FFFF99;
 }
 .category{
 	padding:0.7em;
@@ -167,6 +167,13 @@ background-color:yellow;
 .navi_bar ul li a{
 	font-size:1.5em !important;
 }
+.btn-warning,.btn-primary,.btn-danger,.btn-success{
+	min-width:22%;
+}
+.pageheding{
 
-
+	font-size:18pt;
+	font-weight:600;
+	
+}
 /* Page 2 Css */
