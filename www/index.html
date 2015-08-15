@@ -77,7 +77,7 @@
 
 <!--  Page one start -->
     <div data-role="page" id="page1">
-            	<div data-role="panel" id="myPanel" data-display="push"> 
+              <div data-role="panel" id="myPanel" data-display="push"> 
                 <a href="#page1"><div class="row hr">All Orders</div></a>
                 <div class="row hh">Sort by</div>
                 <a href="#pageresto"><div class="row hr">Restaurants</div></a>
@@ -85,17 +85,18 @@
                 <a href="#pageslots"><div class="row hr" >Time Slots</div></a>
                 <a href="#pagestatus"><div class="row hr" >Status</div></a>
                 <div class="row hr">Logout</div>
-             	</div>
-            	<div  data-role="header" class="head_custom">
+              </div>
+              <div  data-role="header" class="head_custom">
                 <div data-role="navbar" class="navi_bar">
                     <ul>
-                      <li><a class="ui-btn-b" href="#myPanel">Menu</a></li>                     
+                      <li><a class="ui-btn-b" href="#myPanel">Menu</a></li>
+                      <li><a class="ui-btn-b rel_btn">Reload</a></li>                
                     </ul>
                   </div>
-            	</div>
+              </div>
         <div data-role="main"  class="ui-content"  id="jugad">
 
-<div class="orderrow container-fluid"><div class="row"><div class="col-xs-2">"+val.orderID+"</div><div class="col-xs-6"><strong>"+ val.restaurant+"</strong></div><div class="col-xs-3">"+val.college+"</div><div class="col-xs-1">"+val.EDT+"</div></div><div class="row xtra"><div class="col-xs-12"><strong>Items: </strong>"+val.item+" </div><div class="col-xs-12"><font size="+1"><strong>Rs. "+val.price+"</strong></font></div><div class="col-xs-12"><strong>Student:</strong>"+val.student+"</div><div class="col-xs-12"><strong>Address:</strong>"+val.address+"</div><div class="col-xs-12"> <strong>Mobile: </strong>9999999999</div><div class="col-xs-12"><div class="row"> <button data-role="none" data-role="none" class="btn btn-warning" onClick="update_status('"+val.orderID+"','Rest_Rej')"><span class="glyphicon glyphicon-remove"></span>Rest_Rej</button> <button data-role="none" data-role="none" class="btn btn-primary" onClick="update_status('"+val.orderID+"','pickedup')"><span class="glyphicon glyphicon-ok"></span>Picked up</button> <button data-role="none" class="btn btn-success" onClick="update_status('"+val.orderID+"','delivered')" data-role="none"><span class="glyphicon glyphicon-ok"></span>Delivered</button> <button data-role="none" data-role="none" class="btn btn-danger" onClick="update_status('"+val.orderID+"','rejected')"><span class="glyphicon glyphicon-remove"></span>Rejected</button></div><div class="row"><span class="glyphicon glyphicon-remove" style="color:red;"></span>Delivered</div></div></div></div>
+<div class="orderrow container-fluid"><div class="row"><div class="col-xs-2">"+val.orderID+"</div><div class="col-xs-6"><strong>"+ val.restaurant+"</strong></div><div class="col-xs-3">"+val.college+"</div><div class="col-xs-1">"+val.EDT+"</div></div><div class="row xtra"><div class="col-xs-12"><strong>Items: </strong>"+val.item+" </div><div class="col-xs-12"><font size="+1"><strong>Rs. "+val.price+"</strong></font></div><div class="col-xs-12"><strong>Student:</strong>"+val.student+"</div><div class="col-xs-12"><strong>Address:</strong>"+val.address+"</div><div class="col-xs-12"> <strong>Mobile: </strong>9999999999</div><div class="col-xs-12"><div class="row"> <button data-role="none" data-role="none" class="btn btn-warning" onClick="update_status('"+val.orderID+"','restrej')"><span class="glyphicon glyphicon-remove"></span>Rest_Rej</button> <button data-role="none" data-role="none" class="btn btn-primary" onClick="update_status('"+val.orderID+"','pickedup')"><span class="glyphicon glyphicon-ok"></span>Picked up</button> <button data-role="none" class="btn btn-success" onClick="update_status('"+val.orderID+"','delivered')" data-role="none"><span class="glyphicon glyphicon-ok"></span>Delivered</button> <button data-role="none" data-role="none" class="btn btn-danger" onClick="update_status('"+val.orderID+"','rejected')"><span class="glyphicon glyphicon-remove"></span>Rejected</button></div><div class="row"><span class="glyphicon glyphicon-remove" style="color:red;"></span>Delivered</div></div></div></div>
  
 
  </div>
@@ -108,7 +109,7 @@
 <!--  Page custom start -->
     <div data-role="page" id="pagecustom">
 
-            	<div data-role="panel" id="myPanel1" data-display="push"> 
+              <div data-role="panel" id="myPanel1" data-display="push"> 
                 <a href="#page1"><div class="row hr">All Orders</div></a>
                 <div class="row hh">Sort by</div>
                 <a href="#pageresto"><div class="row hr">Restaurants</div></a>
@@ -116,17 +117,19 @@
                 <a href="#pageslots"><div class="row hr">Time Slots</div></a>
                 <a href="#pagestatus"><div class="row hr">Status</div></a>
                 <div class="row hr">Logout</div>
-             	</div>
-           		<div  data-role="header" class="head_custom">
+              </div>
+              <div  data-role="header" class="head_custom">
                 <div data-role="navbar" class="navi_bar">
                     <ul>
-                      <li><a class="ui-btn-b" href="#myPanel1">Menu</a></li>                     
+                      <li><a class="ui-btn-b" href="#myPanel1">Menu</a></li>
+                      <li><a class="ui-btn-b rel_btn">Reload</a></li>
+                                          
                     </ul>
                   </div>
-            	</div>
+              </div>
         <div data-role="main"  class="ui-content"  id="jugadcustom">
            
-        	<div class="orderrow container-fluid" style="margin-bottom:10px; background-color:white;"><div class="row"><div class="col-xs-2">"+val.orderID+"</div><div class="col-xs-4" style="padding-left:px;"><strong>"+ val.student+"</strong></div><div class="col-xs-4"><span class="glyphicon glyphicon-earphone"> </span> 9999999999</div></div><div class="row xtra"><div class="col-xs-8"><strong>Restaurant: </strong>"+val.restaurant+"</div><div class="col-xs-4"><font size="+1"><strong>Rs. 530</strong></font></div><div class="col-xs-12">"+val.item+"</div><div class="col-xs-12"><Strong>Address:</Strong>"+val.address+"</div><div class="col-xs-6 pull-right"> <button data-role=\"none\" data-role="none" class="btn btn-danger" onClick="update_status('"+val.orderID+"','rejected')"><span class="glyphicon glyphicon-remove"></span>Rejected</button> <button data-role=\"none\" data-role="none" class="btn btn-success"onClick="update_status('"+val.orderID+"',delivered') "><span class="glyphicon glyphicon-remove"></span>Delivered</button></div></div></div></div>
+          <div class="orderrow container-fluid" style="margin-bottom:10px; background-color:white;"><div class="row"><div class="col-xs-2">"+val.orderID+"</div><div class="col-xs-4" style="padding-left:px;"><strong>"+ val.student+"</strong></div><div class="col-xs-4"><span class="glyphicon glyphicon-earphone"> </span> 9999999999</div></div><div class="row xtra"><div class="col-xs-8"><strong>Restaurant: </strong>"+val.restaurant+"</div><div class="col-xs-4"><font size="+1"><strong>Rs. 530</strong></font></div><div class="col-xs-12">"+val.item+"</div><div class="col-xs-12"><Strong>Address:</Strong>"+val.address+"</div><div class="col-xs-6 pull-right"> <button data-role=\"none\" data-role="none" class="btn btn-danger" onClick="update_status('"+val.orderID+"','rejected')"><span class="glyphicon glyphicon-remove"></span>Rejected</button> <button data-role=\"none\" data-role="none" class="btn btn-success"onClick="update_status('"+val.orderID+",'delivered') "><span class="glyphicon glyphicon-remove"></span>Delivered</button></div></div></div></div>
 
 
 
@@ -147,14 +150,15 @@
                 <a href="#pageslots"><div class="row hr">Time Slots</div></a>
                 <a href="#pagestatus"><div class="row hr">Status</div></a>
                 <div class="row hr">Logout</div>
-             	</div>
-            	<div  data-role="header" class="head_custom">
+              </div>
+              <div  data-role="header" class="head_custom">
                 <div data-role="navbar" class="navi_bar">
                     <ul>
-                      <li><a class="ui-btn-b" href="#myPanel2">Menu</a></li>                     
+                      <li><a class="ui-btn-b" href="#myPanel2">Menu</a></li>
+                       <li><a class="ui-btn-b rel_btn">Reload</a></li>                      
                     </ul>
                   </div>
-            	</div>
+              </div>
 
             <div data-role="main"  class="ui-content filtered" id="restros">
               <!--  <div class="row" style="margin-bottom:10px; background-color:whiteSmoke;">
@@ -167,7 +171,7 @@
 
      <!--  Page locations start -->
     <div data-role="page" id="pageloc">
-    	       <div data-role="panel" id="myPanel3" data-display="push"> 
+             <div data-role="panel" id="myPanel3" data-display="push"> 
                 <a href="#page1"><div class="row hr">All Orders</div></a>
                 <div class="row hh">Sort by</div>
                 <a href="#pageresto"><div class="row hr">Restaurants</div></a>
@@ -175,14 +179,15 @@
                 <a href="#pageslots"><div class="row hr">Time Slots</div></a>
                 <a href="#pagestatus"><div class="row hr">Status</div></a>
                 <div class="row hr">Logout</div>
-             	</div>
-            	<div  data-role="header" class="head_custom">
+              </div>
+              <div  data-role="header" class="head_custom">
                 <div data-role="navbar" class="navi_bar">
                     <ul>
                       <li><a class="ui-btn-b" href="#myPanel3">Menu</a></li>
+                       <li><a class="ui-btn-b rel_btn">Reload</a></li> 
                     </ul>
                   </div>
-            	</div>
+              </div>
             <div data-role="main"  class="ui-content filtered" id="locations">
                 <!--  <div class="row" style="margin-bottom:10px; background-color:whiteSmoke;">
                         Heritage Fresh
@@ -202,14 +207,15 @@
                 <a href="#pageslots"><div class="row hr">Time Slots</div></a>
                 <a href="#pagestatus"><div class="row hr">Status</div></a>
                 <div class="row hr">Logout</div>
-             	</div>
-            	<div  data-role="header" class="head_custom">
+              </div>
+              <div  data-role="header" class="head_custom">
                 <div data-role="navbar" class="navi_bar">
                     <ul>
-                      <li><a class="ui-btn-b" href="#myPanel4">Menu</a></li>                     
+                      <li><a class="ui-btn-b" href="#myPanel4">Menu</a></li>
+                       <li><a class="ui-btn-b rel_btn">Reload</a></li>                      
                     </ul>
                   </div>
-            	</div>
+              </div>
 
             <div data-role="main"  class="ui-content filtered" id="slots">
                  <!--  <div class="row" style="margin-bottom:10px; background-color:whiteSmoke;">
@@ -230,14 +236,15 @@
                 <a href="#pageslots"><div class="row hr">Time Slots</div></a>
                 <a href="#pagestatus"><div class="row hr">Status</div></a>
                 <div class="row hr">Logout</div>
-             	</div>
-            	<div  data-role="header" class="head_custom">
+              </div>
+              <div  data-role="header" class="head_custom">
                 <div data-role="navbar" class="navi_bar">
                     <ul>
-                      <li><a class="ui-btn-b" href="#myPanel5">Menu</a></li>                     
+                      <li><a class="ui-btn-b" href="#myPanel5">Menu</a></li>
+                       <li><a class="ui-btn-b rel_btn">Reload</a></li>                      
                     </ul>
                   </div>
-            	</div>
+              </div>
             <div data-role="main"  class="ui-content filtered" id="status">
                  <!--  <div class="row" style="margin-bottom:10px; background-color:whiteSmoke;">
                         Heritage Fresh
@@ -250,7 +257,7 @@
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">
 function init() {
-	console.log('init');
+console.log('init');
 document.addEventListener("deviceready", deviceReady, true);
 delete init;
 }
@@ -272,7 +279,7 @@ var u = $("#username", form).val();
 var p = $("#password", form).val();
 console.log("click");
 if(u != '' && p!= '') {
-$.get("http://campusmartdemo.pythonanywhere.com/CampusMart/default/check_Del_Boy_auth/delivery_boy/"+u+"/"+p, function(res,status) {
+$.get("http://collbuzz.com/collbuzz/default/check_Del_Boy_auth/delivery_boy/"+u+"/"+p, function(res,status) {
 if(res == "True") {
 //store
 alert(res);
@@ -306,7 +313,7 @@ var restros = {};
 var hostels = {};
 var slots = {};
 var statuses = {};
-  
+
 $(document).ready(function(){
 // Everythins is kept inside .ready function
 
@@ -325,23 +332,23 @@ $( document ).bind( "mobileinit", function() {
     $.mobile.allowCrossDomainPages = true;
     $.support.cors = true;
 });
-
+$('.rel_btn').on('click','',function(){
+  $.mobile.changePage( "#page1", { transition: "slideup"} );
+});
 // getJSONdata Function
 function getJSONdata(){
     console.log('Now i am being executed (i am getJSONdata function )');
 //http://campusmartdemo.pythonanywhere.com/CollBuzz/default/api/orders.json
-return $.getJSON("http://campusmartdemo.pythonanywhere.com/CampusMart/default/api/orders.json", function( data ) {
+return $.getJSON("http://collbuzz.com/collbuzz/default/api/orders.json", function( data ) {
   var items = [];
   $.each(data, function(key,val){
-    $.each(val,function(key,val){
-    dataObj.records.push(val);
+  $.each(val,function(key,val){
+  dataObj.records.push(val);
 });
 });
 });
 }
-
 //getJSONdata function ends here
-
 $(document).on("pageinit","#page1",function(){ 
 // When entering pageone
 $.when(getJSONdata().done(function(){
@@ -349,7 +356,7 @@ $.when(getJSONdata().done(function(){
 //  var dataObj = {"records":[]};
 $("#jugad").append("<div class=\"pageheading\">All Orders</div>");
 $.each(dataObj.records,function(key,val){
-$("#jugad").append("<div class=\"orderrow container-fluid  "+val.status+" \" id=\""+val.orderID+"\"><div class=\"row\"><div class=\"col-xs-2\">"+val.orderID+"</div><div class=\"col-xs-6\"><strong>"+ val.restaurant+"</strong></div><div class=\"col-xs-3\">"+val.college+"</div><div class=\"col-xs-1\">"+val.EDT+"</div></div><div class=\"row xtra\"><div class=\"col-xs-12\"><strong>Items: </strong>"+val.item+" </div><div class=\"col-xs-12\"><font size=\"+1\"><strong>Rs. "+val.price+"</strong></font></div><div class=\"col-xs-12\"><strong>Student:</strong>"+val.student+"</div><div class=\"col-xs-12\"><strong>Address:</strong>"+val.address+"</div><div class=\"col-xs-12\"> <strong>Mobile: </strong>9999999999</div><div class=\"col-xs-12\"><div class=\"row\"> <button data-role=\"nonse\" class=\"btn btn-primary\" onClick=\"update_status('"+key+"','"+val.orderID+"','Rest_Rej')\"><span class=\"glyphicon glyphicon-remove\"></span>Rest_Rej</button> <button data-role=\"none\" class=\"btn btn-warning\" onClick=\"update_status('"+key+"','"+val.orderID+"','pickedup')\"><span class=\"glyphicon glyphicon-ok\"></span>Picked up</button> <button data-role=\"none\" class=\"btn btn-success\" onClick=\"update_status('"+key+"','"+val.orderID+"','delivered')\"><span class=\"glyphicon glyphicon-ok\"></span>Delivered</button> <button data-role=\"none\" class=\"btn btn-danger\" onClick=\"update_status('"+key+"','"+val.orderID+"','rejected')\"><span class=\"glyphicon glyphicon-remove\"></span>Rejected</button></div></div></div></div>");
+$("#jugad").append("<div class=\"orderrow container-fluid  "+val.orderID+ " " +val.status+" \" id=\""+val.orderID+"\"><div class=\"row\"><div class=\"col-xs-2\">"+val.orderID+"</div><div class=\"col-xs-6\"><strong>"+ val.restaurant+"</strong></div><div class=\"col-xs-3\">"+val.college+"</div><div class=\"col-xs-1\">"+val.EDT+"</div></div><div class=\"row xtra\"><div class=\"col-xs-12\"><strong>Items: </strong>"+val.item+" </div><div class=\"col-xs-12\"><font size=\"+1\"><strong>Rs. "+val.price+"</strong></font></div><div class=\"col-xs-12\"><strong>Student:</strong>"+val.student+"</div><div class=\"col-xs-12\"><strong>Address:</strong>"+val.address+"</div><div class=\"col-xs-12\"> <strong>Mobile: </strong>9999999999</div><div class=\"col-xs-12\"><div class=\"row\"> <button data-role=\"nonse\" class=\"btn btn-primary\" onClick=\"update_status('"+key+"','"+val.orderID+"','restrej')\"><span class=\"glyphicon glyphicon-remove\"></span>Rest_Rej</button> <button data-role=\"none\" class=\"btn btn-warning\" onClick=\"update_status('"+key+"','"+val.orderID+"','pickedup')\"><span class=\"glyphicon glyphicon-ok\"></span>Picked up</button> <button data-role=\"none\" class=\"btn btn-success\" onClick=\"update_status('"+key+"','"+val.orderID+"','delivered')\"><span class=\"glyphicon glyphicon-ok\"></span>Delivered</button> <button data-role=\"none\" class=\"btn btn-danger\" onClick=\"update_status('"+key+"','"+val.orderID+"','rejected')\"><span class=\"glyphicon glyphicon-remove\"></span>Rejected</button></div></div></div></div>");
 if(!restros[val.restaurant]){restros[val.restaurant] = true;$("#restros").append("<div class=\"row category\" >"+val.restaurant+"</div>");}
 if(!hostels[val.college]){hostels[val.college] = true;$("#locations").append("<div class=\"row category\" >"+val.college+"</div>");}
 if(!slots[val.EDT]){slots[val.EDT] = true;$("#slots").append("<div class=\"row category\" >"+val.EDT+"</div>");}
@@ -378,22 +385,22 @@ $(".filtered div").bind('click', function(){
 function custompage(type, value){
         $("#jugadcustom").html("");
               
-        	  if (type=='college'){
-        	  	$("#jugadcustom").append("<div class=\"pageheading\">College wise</div>");
-        			$.each(dataObj.records,function(key,val){
-        				
+            if (type=='college'){
+              $("#jugadcustom").append("<div class=\"pageheading\">College wise</div>");
+              $.each(dataObj.records,function(key,val){
+                
                 if(val[type] == value){
-                      $("#jugadcustom").append("<div class=\"orderrow container-fluid "+val.status+" \" id=\""+val.orderID+"\"><div class=\"row\"><div class=\"col-xs-2\">"+val.orderID+"</div><div class=\"col-xs-4\" style=\"padding-left:px;\"><strong>"+ val.student+"</strong></div><div class=\"col-xs-4\"><span class=\"glyphicon glyphicon-earphone\"> </span> 9999999999</div></div><div class=\"row xtra\"><div class=\"col-xs-8\"><strong>Restaurant: </strong>"+val.restaurant+"</div><div class=\"col-xs-4\"><font size=\"+1\"><strong>Rs. 530</strong></font></div><div class=\"col-xs-12\">"+val.item+"</div><div class=\"col-xs-12\"><Strong>Address:</Strong>"+val.address+"</div><div class=\"row text-right\"> <button data-role=\"none\" class=\"btn btn-danger\" onClick=\"update_status('"+key+"','"+val.orderID+"','rejected')\"><span class=\"glyphicon glyphicon-remove\"></span>Rejected</button> <button data-role=\"none\" class=\"btn btn-success\"onClick=\"update_status('"+key+"','"+val.orderID+"',delivered') \"><span class=\"glyphicon glyphicon-remove\"></span>Delivered</button></div></div></div></div>");
+                      $("#jugadcustom").append("<div class=\"orderrow container-fluid "+val.orderID+ " " +val.status+" \" id=\""+val.orderID+"\"><div class=\"row\"><div class=\"col-xs-2\">"+val.orderID+"</div><div class=\"col-xs-4\" style=\"padding-left:px;\"><strong>"+ val.student+"</strong></div><div class=\"col-xs-4\"><span class=\"glyphicon glyphicon-earphone\"> </span> 9999999999</div></div><div class=\"row xtra\"><div class=\"col-xs-8\"><strong>Restaurant: </strong>"+val.restaurant+"</div><div class=\"col-xs-4\"><font size=\"+1\"><strong>Rs. 530</strong></font></div><div class=\"col-xs-12\">"+val.item+"</div><div class=\"col-xs-12\"><Strong>Address:</Strong>"+val.address+"</div><div class=\"row text-right\"> <button data-role=\"none\" class=\"btn btn-danger\" onClick=\"update_status('"+key+"','"+val.orderID+"','rejected')\"><span class=\"glyphicon glyphicon-remove\"></span>Rejected</button> <button data-role=\"none\" class=\"btn btn-success\"onClick=\"update_status('"+key+"','"+val.orderID+",'delivered') \"><span class=\"glyphicon glyphicon-remove\"></span>Delivered</button></div></div></div></div>");
 
                 }
         });
-		}
-		if (type=='restaurant'){
-			$("#jugadcustom").append("<div class=\"pageheading\">Restaurant wise</div>");
+    }
+    if (type=='restaurant'){
+      $("#jugadcustom").append("<div class=\"pageheading\">Restaurant wise</div>");
 $.each(dataObj.records,function(key,val){
-        	
+          
                 if(val[type] == value){
-                      $("#jugadcustom").append("<div class=\"orderrow container-fluid  "+val.status+" \" id=\""+val.orderID+"\"><div class=\"row\"><div class=\"col-xs-2\">"+val.orderID+"</div><div class=\"col-xs-4\" style=\"padding-left:px;\"><strong>"+ val.price+"</strong></div><div class=\"col-xs-4\">"+val.EDT+"</div></div><div class=\"row xtra\"><div class=\"col-xs-8\"><strong>Restaurant: </strong>"+val.restaurant+"</div><div class=\"col-xs-4\"><font size=\"+1\"><strong>Rs. "+val.price+"</strong></font></div><div class=\"col-xs-12\">"+val.item+"</div><div class=\"col-xs-12\"><Strong>Address:</Strong>"+val.address+"</div><div class=\"row text-right\"> <button data-role=\"none\" class=\"btn btn-primary\" onClick=\"update_status('"+key+"','"+val.orderID+"','Rest_rej')\"><span class=\"glyphicon glyphicon-remove\"></span>RestRej</button> <button data-role=\"none\" class=\"btn btn-warning\"onClick=\"update_status('"+key+"','"+val.orderID+"',pickedup') \"><span class=\"glyphicon glyphicon-remove\"></span>PickedUp</button></div></div></div></div>");
+                      $("#jugadcustom").append("<div class=\"orderrow container-fluid  "+val.orderID+ " " +val.status+" \" id=\""+val.orderID+"\"><div class=\"row\"><div class=\"col-xs-2\">"+val.orderID+"</div><div class=\"col-xs-4\" style=\"padding-left:px;\"><strong>"+ val.price+"</strong></div><div class=\"col-xs-4\">"+val.EDT+"</div></div><div class=\"row xtra\"><div class=\"col-xs-8\"><strong>Restaurant: </strong>"+val.restaurant+"</div><div class=\"col-xs-4\"><font size=\"+1\"><strong>Rs. "+val.price+"</strong></font></div><div class=\"col-xs-12\">"+val.item+"</div><div class=\"col-xs-12\"><Strong>Address:</Strong>"+val.address+"</div><div class=\"row text-right\"> <button data-role=\"none\" class=\"btn btn-primary\" onClick=\"update_status('"+key+"','"+val.orderID+"','restrej')\"><span class=\"glyphicon glyphicon-remove\"></span>RestRej</button> <button data-role=\"none\" class=\"btn btn-warning\"onClick=\"update_status('"+key+"','"+val.orderID+"',pickedup') \"><span class=\"glyphicon glyphicon-remove\"></span>PickedUp</button></div></div></div></div>");
 
                 }
         });
@@ -402,21 +409,20 @@ $.each(dataObj.records,function(key,val){
 if(type=='slots'){
 $("#jugadcustom").append("<div class=\"pageheading\">Slots wise</div>");
 $.each(dataObj.records,function(key,val){
-        	
+          
                 if(val['EDT'] == value){
-                      $("#jugadcustom").append("<div class=\"orderrow container-fluid  "+val.status+" \" id=\""+val.orderID+"\"><div class=\"row\"><div class=\"col-xs-2\">"+val.orderID+"</div><div class=\"col-xs-4\" style=\"padding-left:px;\"><strong>"+ val.restaurant+"</strong></div><div class=\"col-xs-6\">"+val.address+"</div></div><div class=\"row xtra\"><div class=\"col-xs-8\"><strong>Restaurant: </strong>"+val.restaurant+"</div><div class=\"col-xs-4\"><font size=\"+1\"><strong>Rs. "+val.price+"</strong></font></div><div class=\"col-xs-12\">"+val.item+"</div><div class=\"col-xs-12\"> <strong>Student: </strong>"+val.student+"</div><div class=\"col-xs-12\"><Strong>Address:</Strong>"+val.address+"</div><div class=\"row text-right\"> <button data-role=\"none\" class=\"btn btn-primary\" onClick=\"update_status('"+val.orderID+"','Rest_Rej')\"><span class=\"glyphicon glyphicon-remove\"></span>Rest_Rej</button> <button data-role=\"none\" class=\"btn btn-yellow\" onClick=\"update_status('"+key+"','"+val.orderID+"','pickedup')\"><span class=\"glyphicon glyphicon-ok\"></span>Picked up</button> <button data-role=\"none\" class=\"btn btn-success\" onClick=\"update_status('"+key+"','"+val.orderID+"','delivered')\"><span class=\"glyphicon glyphicon-ok\"></span>Delivered</button> <button data-role=\"none\" class=\"btn btn-danger\" onClick=\"update_status('"+key+"','"+val.orderID+"','rejected')\"><span class=\"glyphicon glyphicon-remove\"></span>Rejected</button></div></div></div></div>");
-
+                      $("#jugadcustom").append("<div class=\"orderrow container-fluid  "+val.orderID+ " "  +val.status+" \" id=\""+val.orderID+"\"><div class=\"row\"><div class=\"col-xs-2\">"+val.orderID+"</div><div class=\"col-xs-4\" style=\"padding-left:px;\"><strong>"+ val.restaurant+"</strong></div><div class=\"col-xs-6\">"+val.address+"</div></div><div class=\"row xtra\"><div class=\"col-xs-8\"><strong>Restaurant: </strong>"+val.restaurant+"</div><div class=\"col-xs-4\"><font size=\"+1\"><strong>Rs. "+val.price+"</strong></font></div><div class=\"col-xs-12\">"+val.item+"</div><div class=\"col-xs-12\"> <strong>Student: </strong>"+val.student+"</div><div class=\"col-xs-12\"><Strong>Address:</Strong>"+val.address+"</div><div class=\"row text-right\"> <button data-role=\"none\" class=\"btn btn-primary\" onClick=\"update_status('"+val.orderID+"','restrej')\"><span class=\"glyphicon glyphicon-remove\"></span>Rest_Rej</button> <button data-role=\"none\" class=\"btn btn-yellow\" onClick=\"update_status('"+key+"','"+val.orderID+"','pickedup')\"><span class=\"glyphicon glyphicon-ok\"></span>Picked up</button> <button data-role=\"none\" class=\"btn btn-success\" onClick=\"update_status('"+key+"','"+val.orderID+"','delivered')\"><span class=\"glyphicon glyphicon-ok\"></span>Delivered</button> <button data-role=\"none\" class=\"btn btn-danger\" onClick=\"update_status('"+key+"','"+val.orderID+"','rejected')\"><span class=\"glyphicon glyphicon-remove\"></span>Rejected</button></div></div></div></div>");
                 }
         });
-	
+  
 }
 if (type=='status')
 {
 $("#jugadcustom").append("<div class=\"pageheading\">Status wise</div>");
 $.each(dataObj.records,function(key,val){
-        	
+          
                 if(val['status'] == value){
-                      $("#jugadcustom").append("<div class=\"orderrow container-fluid "+val.status+" \" id=\""+val.orderID+"\"><div class=\"row\"><div class=\"col-xs-2\">"+val.orderID+"</div><div class=\"col-xs-4\" style=\"padding-left:px;\"><strong>"+ val.restaurant+"</strong></div><div class=\"col-xs-6\">"+val.address+"</div></div><div class=\"row xtra\"><div class=\"col-xs-8\"><strong>Restaurant: </strong>"+val.restaurant+"</div><div class=\"col-xs-4\"><font size=\"+1\"><strong>Rs. "+val.price+"</strong></font></div><div class=\"col-xs-12\">"+val.item+"</div><div class=\"col-xs-12\"> <strong>Student: </strong>"+val.student+"</div><div class=\"col-xs-12\"><Strong>Address:</Strong>"+val.address+"</div><div class=\"row text-right\"> <button data-role=\"none\" class=\"btn btn-primary\" onClick=\"update_status('"+key+"','"+val.orderID+"','Rest_Rej')\"><span class=\"glyphicon glyphicon-remove\"></span>Rest_Rej</button> <button data-role=\"none\" class=\"btn btn-warning\" onClick=\"update_status('"+key+"','"+val.orderID+"','pickedup')\"><span class=\"glyphicon glyphicon-ok\"></span>Picked up</button> <button data-role=\"none\" class=\"btn btn-success\" onClick=\"update_status('"+key+"','"+val.orderID+"','delivered')\"><span class=\"glyphicon glyphicon-ok\"></span>Delivered</button> <button data-role=\"none\" class=\"btn btn-danger\" onClick=\"update_status('"+key+"','"+val.orderID+"','rejected')\"><span class=\"glyphicon glyphicon-remove\"></span>Rejected</button></div></div></div></div>");
+                      $("#jugadcustom").append("<div class=\"orderrow container-fluid "+val.orderID+ " "  +val.status+" \" id=\""+val.orderID+"\"><div class=\"row\"><div class=\"col-xs-2\">"+val.orderID+"</div><div class=\"col-xs-4\" style=\"padding-left:px;\"><strong>"+ val.restaurant+"</strong></div><div class=\"col-xs-6\">"+val.address+"</div></div><div class=\"row xtra\"><div class=\"col-xs-8\"><strong>Restaurant: </strong>"+val.restaurant+"</div><div class=\"col-xs-4\"><font size=\"+1\"><strong>Rs. "+val.price+"</strong></font></div><div class=\"col-xs-12\">"+val.item+"</div><div class=\"col-xs-12\"> <strong>Student: </strong>"+val.student+"</div><div class=\"col-xs-12\"><Strong>Address:</Strong>"+val.address+"</div><div class=\"row text-right\"> <button data-role=\"none\" class=\"btn btn-primary\" onClick=\"update_status('"+key+"','"+val.orderID+"','restrej')\"><span class=\"glyphicon glyphicon-remove\"></span>Rest_Rej</button> <button data-role=\"none\" class=\"btn btn-warning\" onClick=\"update_status('"+key+"','"+val.orderID+"','pickedup')\"><span class=\"glyphicon glyphicon-ok\"></span>Picked up</button> <button data-role=\"none\" class=\"btn btn-success\" onClick=\"update_status('"+key+"','"+val.orderID+"','delivered')\"><span class=\"glyphicon glyphicon-ok\"></span>Delivered</button> <button data-role=\"none\" class=\"btn btn-danger\" onClick=\"update_status('"+key+"','"+val.orderID+"','rejected')\"><span class=\"glyphicon glyphicon-remove\"></span>Rejected</button></div></div></div></div>");
 
                 }
         });
@@ -434,21 +440,24 @@ $.mobile.changePage( "#pagecustom", { transition: "slideup"} );
 
 function update_status(key,id,status)
 {
-	$.ajax({
+  $.ajax({
   type: "POST",
-  /*url:'http://campusmartdemo.pythonanywhere.com/CampusMart/default/check_Del_Boy_auth/orders/'+id+'/'+status,*/
-  url:'http://campusmartdemo.pythonanywhere.com/CampusMart/default/check_Del_Boy_auth/orders/'+id+'/'+status,
+  /*url:'http://collbuzz.com/collbuzz/default/check_Del_Boy_auth/orders/'+id+'/'+status,*/
+  url:'http://collbuzz.com/collbuzz/default/check_Del_Boy_auth/orders/'+id+'/'+status,
 
 });
 
-	dataObj.records[key].status=status;
-	/* Code for changing color of the strips imediatley 
+  dataObj.records[key].status=status;
+  alert('hello');
+$('.'+id).removeClass("rejected pending pickedup Rest_Rej delivered");
+$('.'+id).addClass(status);
 
-	alert("Hello");
-	$('#'+id).removeClass("rejected pending pickedup Rest_Rej delivered");
-	$('#'+id).addClass(status);
+  /* Code for changing color of the strips imediatley 
 
-	*/
+  alert("Hello");
+  $('#'+id).removeClass("rejected pending pickedup Rest_Rej delivered");
+  $('#'+id).addClass(status);
+  */
 
 }
 
