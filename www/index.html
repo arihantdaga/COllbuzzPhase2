@@ -96,8 +96,7 @@
               </div>
         <div data-role="main"  class="ui-content"  id="jugad">
 
-<div class="orderrow container-fluid"><div class="row"><div class="col-xs-2">"+val.orderID+"</div><div class="col-xs-6"><strong>"+ val.restaurant+"</strong></div><div class="col-xs-3">"+val.college+"</div><div class="col-xs-1">"+val.EDT+"</div></div><div class="row xtra"><div class="col-xs-12"><strong>Items: </strong>"+val.item+" </div><div class="col-xs-12"><font size="+1"><strong>Rs. "+val.price+"</strong></font></div><div class="col-xs-12"><strong>Student:</strong>"+val.student+"</div><div class="col-xs-12"><strong>Address:</strong>"+val.address+"</div><div class="col-xs-12"> <strong>Mobile: </strong>9999999999</div><div class="col-xs-12"><div class="row"> <button data-role="none" data-role="none" class="btn btn-warning" onClick="update_status('"+val.orderID+"','restrej')"><span class="glyphicon glyphicon-remove"></span>Rest_Rej</button> <button data-role="none" data-role="none" class="btn btn-primary" onClick="update_status('"+val.orderID+"','pickedup')"><span class="glyphicon glyphicon-ok"></span>Picked up</button> <button data-role="none" class="btn btn-success" onClick="update_status('"+val.orderID+"','delivered')" data-role="none"><span class="glyphicon glyphicon-ok"></span>Delivered</button> <button data-role="none" data-role="none" class="btn btn-danger" onClick="update_status('"+val.orderID+"','rejected')"><span class="glyphicon glyphicon-remove"></span>Rejected</button></div><div class="row"><span class="glyphicon glyphicon-remove" style="color:red;"></span>Delivered</div></div></div></div>
- 
+
 
  </div>
         <div data-role="footer">
@@ -280,9 +279,10 @@ var p = $("#password", form).val();
 console.log("click");
 if(u != '' && p!= '') {
 $.get("http://collbuzz.com/collbuzz/default/check_Del_Boy_auth/delivery_boy/"+u+"/"+p, function(res,status) {
-if(res == "True") {
+if(res != "False") {
 //store
 alert(res);
+window.localStorage['db_id']=res;
 window.localStorage["username"] = u;
 window.localStorage["password"] = p;
 $.mobile.changePage( "#page1", { transition: "slideup"} );
@@ -339,7 +339,7 @@ $('.rel_btn').on('click','',function(){
 function getJSONdata(){
     console.log('Now i am being executed (i am getJSONdata function )');
 //http://campusmartdemo.pythonanywhere.com/CollBuzz/default/api/orders.json
-return $.getJSON("http://collbuzz.com/collbuzz/default/api/orders.json", function( data ) {
+return $.getJSON("http://collbuzz.com/collbuzz/default/api/orders.json?db_id="+window.localStorage['db_id'], function( data ) {
   var items = [];
   $.each(data, function(key,val){
   $.each(val,function(key,val){
